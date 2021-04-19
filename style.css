@@ -1,12 +1,12 @@
 
 
-/*LES BASES*/
 body {
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.2;
     color: #000000;
+    margin: 0;
 }
 
 
@@ -16,10 +16,10 @@ a {
     cursor: pointer;
 }
 
-ul{
-    list-style: none;
+.fas {
+    font-size: 20px;
+    color:black;
 }
-
 
 
 
@@ -29,19 +29,20 @@ ul{
 .populaire_section,
 .activite_section,
 .footer_section {
-    padding-left: 50px;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
+ 
 
-
-/*RECHERCHE */
+/*NAV SECTION */
 .nav_section {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .nav_wrapper {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 150px);
+    grid-template-columns: 1fr repeat(3, 160px);
     align-items: center;
     justify-content: center;
 }
@@ -49,33 +50,160 @@ ul{
 .nav_logo {
     justify-self: start;
     padding-top: 40px;
-    min-width: 95px;
-    min-height: 45px
 }
 
 .nav_lien {
     padding-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     text-align: center;
     color:#000000;
     cursor: pointer;
 }
 
 .nav_lien_bleu:hover {
-    padding-top: 50px;
     color: #0065FC;
     border-top: 2px solid;
     border-color: #0065FC;
+    padding-top:48px;
 }
 
 .nav_lien_gras {
-    font-weight: 600;
+    font-weight: 700;
     color: #0065FC;
 }
 
-/*POPULAIRE */
+
+
+/*RECHERCHE BAR*/
+
+.gros_titre{
+    margin-bottom:4px;
+}
+
+.sous_titre{
+    margin-top: 0px;
+}
+
+
+.zone_de_recherche{
+    display: flex;
+    align-items: center;
+}
+
+.icone_map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 50px;
+    background-color:#F2F2F2;
+    border-radius:16px 0px 0px 16px;
+    
+}
+
+.icone_cache{
+    display: none;
+}
+.fa-search{
+   font-size: 20px;
+}
+
+.zone_recherche{
+    height: 50px;
+    width: 235px;
+    font-size: 20px;
+    border-color: #F2F2F2;
+    border-style: solid;
+}
+
+::placeholder {
+    color: black;
+    font-size: 20px;
+    padding:16px;
+  }
+
+
+
+.recherche_bouton{
+    cursor: pointer;
+    height: 56px;
+    width: 135px;
+    font-size: 20px;
+    color: white;
+    background-color:blue;
+    border-style: none;
+    border-radius:0px 16px 16px 0px;    
+    
+}
+
+/*RECHERCHE FILTRE*/
+
+.section_filtre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:32px
+}
+
+.s {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 32px;
+}
+
+.filtre{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+    color: blue;
+}
+
+.rond_icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color:cornflowerblue;
+    border-radius: 50%;
+}
+
+
+.filtre_nom{
+    border-color: #F2F2F2;
+    border-style: solid;
+    
+}
+
+.filtre_nom:hover{
+    background-color: cornflowerblue;
+}
+
+.info_text{
+    margin:0;
+}
+
+.bas_recherche_section{
+    display: flex;
+    justify-content: baseline;
+}
+
+
+
 
 /*HEBERGEMENT */
+
+
+/*POPULAIRE */
+
+
+
+
 
 
 /*ACTIVITE */
@@ -90,17 +218,11 @@ ul{
 .footer_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 48px;
 }
 
 .footer_list{
     padding-left: 0%;
 }
-
-.footer_titre {
-    padding-bottom: 16px;
-}
-
 
 .footer_objet {
     padding-bottom: 16px;
