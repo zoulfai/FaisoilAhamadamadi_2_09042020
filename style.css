@@ -1,7 +1,77 @@
 
 
-/*RECHERCHE */
+/*LES BASES*/
+body {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #000000;
+}
 
+
+a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+.nav_section,
+.recherche_section,
+.hebergement_section,
+.populaire_section,
+.activite_section,
+.footer_section {
+    padding-left: 50px;
+}
+
+
+
+/*RECHERCHE */
+.nav_section {
+    margin-bottom: 30px;
+}
+
+.nav_wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 150px);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_logo {
+    justify-self: start;
+    padding-top: 40px;
+    min-width: 95px;
+    min-height: 45px
+}
+
+.nav_lien {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+    color:#000000;
+    cursor: pointer;
+}
+
+.nav_lien_bleu:hover {
+    padding-top: 50px;
+    color: #0065FC;
+    border-top: 2px solid;
+    border-color: #0065FC;
+}
+
+.nav_lien_gras {
+    font-weight: 600;
+    color: #0065FC;
+}
 
 /*POPULAIRE */
 
@@ -12,3 +82,26 @@
 
 
 /*FOOTER */
+
+.footer_section {
+    background-color: #F2F2F2;
+}
+
+.footer_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 48px;
+}
+
+.footer_list{
+    padding-left: 0%;
+}
+
+.footer_titre {
+    padding-bottom: 16px;
+}
+
+
+.footer_objet {
+    padding-bottom: 16px;
+}
