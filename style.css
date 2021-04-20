@@ -15,7 +15,7 @@
 body {
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.2;
     color: #000000;
     margin: 0;
@@ -159,11 +159,12 @@ a {
 .section_filtre{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     margin-top:32px
 
 }
 
+/*fontionnement des petit container*/
 .petit_container{
     display: flex;
     align-items: center;
@@ -175,6 +176,12 @@ a {
     height:50px;
 }
 
+.boite_container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 32px;
+}
+
 .petit_container:hover{
     background-color: cornflowerblue;
     cursor: pointer;
@@ -182,8 +189,10 @@ a {
 
 
 .filtre{
+    padding-right: 32px;
     font-weight: 700;
     font-size: 18px;
+
 }
 
 .fa-money-bill-wave,
@@ -237,7 +246,8 @@ a {
 .bas_recherche_section{
     display: flex;
     align-items: center;
-    margin-top:32px
+    margin-top:32px;
+    margin-bottom: 32px;
 }
 
 
@@ -282,28 +292,20 @@ a {
     height: 0%;
 }
 
-.hebergement_boite {
+.hebergement_container {
     display: flex;
-    justify-content: start;
-}
-
-.hebergement_clic{
+    width: auto;
+    height: 200px;
     background-color: white;
     padding: 4px;
     border-radius: 20px;
-    height: 200px;
-    width: 210px;
     border-radius: 20px;
     box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, 0.2);
-    
 }
 
-.hebergement_boite:hover {
+
+.hebergement_container:hover {
     transform: scale(1.02);
-}
-
-.hebergement_boite1{
-    grid-area: 1 / 1 / 1/ 1;
 }
 
 
@@ -317,20 +319,23 @@ a {
 
 
 .hebergement_petit_titre{
-    padding: 16px;
-    margin:0;
+    padding-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 3px;
 }
 
 .hebergement_bas{
     margin-top: 48px;
 }
 
+
 .fa-star{
     font-size: 13px;
+    color:blue;
 }
 
 .etoiles{
-    padding: 16px;
+    padding-left: 16px;
 }
 
 .etoile_vide{
@@ -339,6 +344,21 @@ a {
 
 .bloc_de_texte_bloc{
     display: flex;
+    flex-direction: column;
+}
+
+.hebergement_mini_titre{
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding-left: 16px;
+}
+
+.prix_gras{
+    font-weight: 700;
+}
+
+.euro{
+    font-weight: 700;
 }
 /*POPULAIRE */
 
@@ -371,7 +391,7 @@ a {
     grid-row-gap: 32px;
 }
 
-.populaire_boite {
+.populaire_container {
     display: flex;
     justify-content: start;
 }
@@ -382,40 +402,51 @@ a {
     padding: 4px;
     border-radius: 20px;
     height: 150px;
-    width: 400px;
+    width: auto;
     border-radius: 20px;
     box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, 0.2);
     
 }
 
-.populaire_boite:hover {
+.populaire_clic:hover {
     transform: scale(1.02);
 }
 
-.populaire_boite1{
-    grid-area: 1;
-}
 
 
 .populaire_photo_img {
-    width: 25%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
+.populaire_mini_titre {
+    padding-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    padding-right: 32px;
+
+}
 
 .populaire_petit_titre{
-    padding: 16px;
-    margin:0;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    padding-left: 16px;
+    padding-right: 32px;
 }
 
 
 /*ACTIVITE */
 
 .activite_section {
+    margin-top: 32px;
     margin-bottom: 48px;
+}
+
+.activite_wrapper{
+    padding-top:32px
 }
 
 .activite_titre {
