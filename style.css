@@ -90,6 +90,18 @@ a {
     color: #0065FC;
 }
 
+/*media queri pour taille ecran petit*/
+@media  (max-width: 768px) {
+    /* For mobile phones: */
+.nav_wrapper{
+    display: flex;
+
+}
+.nav_lien{
+    color: red;
+}
+  }
+  
 
 
 /*RECHERCHE BAR*/
