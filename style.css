@@ -68,6 +68,7 @@ a {
 .nav_logo {
     justify-self: start;
     padding-top: 40px;
+    
 }
 
 .nav_lien {
@@ -88,6 +89,7 @@ a {
 .nav_lien_gras {
     font-weight: 700;
     color: #0065FC;
+    
 }
 
 /*media queri nav bar pour taille ecran petit*/
@@ -96,6 +98,8 @@ a {
 @media (max-width: 768px) {
     .nav_section {
         margin-bottom: 16px;
+        padding-right: 0;
+        padding-left: 0;
     }
     
     .nav_wrapper {
@@ -110,6 +114,7 @@ a {
         grid-area: 1/1/1/1;
         justify-self: start;
         padding-top: 40px;
+        padding-left: 16px;
     }
     
     .nav_lien {
@@ -137,6 +142,7 @@ a {
         font-weight: 700;
         color: #0065FC;
         justify-self: end;
+        padding-right: 16px;
     }
     
 
@@ -184,8 +190,13 @@ a {
         display: none;
     }
 
-}
+    .fa-search{
+        font-size: 16px;
+        color: white;
+    }
 
+}
+/*fin media section recherchee*/
 
 
 
@@ -199,10 +210,6 @@ a {
     background-color:#F2F2F2;
     border-radius:16px 0px 0px 16px;
     
-}
-
-.icone_cache{
-    display: none;
 }
 
 
@@ -233,6 +240,10 @@ a {
     border-radius:0px 16px 16px 0px;   
 }
 
+.fa-search{
+    display: none;
+}
+
 
 .recherche_non{
     padding: 16px;
@@ -245,6 +256,24 @@ a {
     align-items: center;
     justify-content: start;
     margin-top:32px
+
+}
+
+@media (max-width: 768px) {
+
+    .section_filtre{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .boite_container{
+        display: flex;
+    }
+
+
+
 
 }
 
@@ -318,7 +347,7 @@ a {
     border-width: 2px;
     border-color: gray;
     border-radius: 50%;
-    margin-right: 16px;
+    padding: auto;
 }
 
 .fa-info{
@@ -335,7 +364,7 @@ a {
 }
 
 
-.info_text{
+.info_texte{
     margin-left:16px;
 }
 
