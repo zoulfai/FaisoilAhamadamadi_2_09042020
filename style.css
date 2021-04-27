@@ -252,6 +252,12 @@ a {
         flex-direction: column
     }
 
+    .bouton_recherche{
+        position: relative;
+        right: 40px;
+
+    }
+
     .rechercher{
         display: none;
     }
@@ -261,7 +267,7 @@ a {
         justify-content: center;
         align-items: center;
         position: relative;
-        right: 40px;
+        right: 60px;
     }
 
     .zone_recherche{
@@ -636,7 +642,6 @@ a {
     background-color: #F2F2F2;
     padding: 32px;
     border-radius: 20px;
-    min-width: 420px;
 }
 
 .populaire_boite_bloc {
