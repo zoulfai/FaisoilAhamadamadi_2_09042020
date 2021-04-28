@@ -3,271 +3,212 @@
 <head>
 	<title>Reservia</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href="./style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/bf98db2aa2.js" crossorigin="anonymous">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/bf98db2aa2.js">
 	</script>
 </head>
 <body>
 	<!-- NAV BAR -->
 	<nav class="nav_section">
 		<div class="nav_wrapper">
-			<img alt="Logo Reservia" class="nav_logo" src="images/logo/Reservia.svg"> 
-			<a class="nav_lien nav_lien_bleu" href="#hebergement">Hébergements</a> 
-			<a class="nav_lien nav_lien_bleu" href="#activite">Activités</a>
-			 <a class="nav_lien nav_lien_gras">S'incrire</a>
+			<img alt="Logo Reservia" class="nav_logo" src="images/logo/Reservia.svg"> <a class="nav_lien nav_lien_bleu" href="#hebergement">Hébergements</a> <a class="nav_lien nav_lien_bleu" href="#activite">Activités</a> <a class="nav_lien nav_lien_gras">S'incrire</a>
 		</div>
-	</nav>
-    <!-- PARTI RECHERCHE -->
+	</nav><!-- PARTI RECHERCHE -->
 	<section class="recherche_section">
 		<div class="recherche_wrapper">
-		<div class="recherche_zone_haut">
-			<h1 class="gros_titre">Trouvez votre hébergement pour des vancances de rêve</h1>
-			<p class="sous_titre">En plein centre ville ou en pleine nature</p>
-		</div>
+			<div class="recherche_zone_haut">
+				<h1 class="gros_titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+				<p class="sous_titre">En plein centre ville ou en pleine nature</p>
+			</div>
 			<div class="zone_de_recherche">
-			<div class="icone_map">
-			<i class="fas fa-map-marker-alt"></i>
+				<div class="icone_map">
+					<i class="fas fa-map-marker-alt"></i>
+				</div><input class="zone_recherche" placeholder="Marseille, France" type="text">
+				<div class="bouton_recherche">
+					<button class="rechercher">Rechercher</button>
+					<div class="bouton_cache">
+						<div class="icone_cache">
+							<i class="fas fa-search"></i>
+						</div>
+					</div>
+				</div>
 			</div>
-			<input type="text" class="zone_recherche" placeholder="Marseille, France" >
-			<div class="bouton_recherche">
-			<button class="rechercher">Rechercher</button>
-			<div class="bouton_cache">
-			<div class="icone_cache">
-			<i class="fas fa-search"></i>
 		</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			<div class="section_filtre" >
+		<div class="section_filtre">
 			<a class="filtre">Filtres</a>
 			<div class="boite_container">
-			<div class="petit_container"><div class="rond_icone"><i class="fas fa-money-bill-wave"></div></i><span class="filtre_nom">Économique</span></div>
-			<div class="petit_container"><div class="rond_icone"><i class="fas fa-child"></i></div><span class="filtre_nom">Familial</span></div> 
-			<div class="petit_container"><div class="rond_icone"><i class="fas fa-heart"></i></div><span class="filtre_nom">Romantique</span></div> 
-			<div class="petit_container"><div class="rond_icone"><i class="fas fa-dog"></i></div><span class="filtre_nom">Animaux autorisés</span></div>
-		</div>
-		</div> 
-			<div class="bas_recherche_section">
-			<div class="bouton_info"><i class="fas fa-info"></i></div>
-			<p class="info_texte">Plus de 500 logements sont disponibles dans cette ville</p>
+				<div class="petit_container">
+					<div class="rond_icone">
+						<i class="fas fa-money-bill-wave"></i>
+					</div><span class="filtre_nom">Économique</span>
+				</div>
+				<div class="petit_container">
+					<div class="rond_icone">
+						<i class="fas fa-child"></i>
+					</div><span class="filtre_nom">Familial</span>
+				</div>
+				<div class="petit_container">
+					<div class="rond_icone">
+						<i class="fas fa-heart"></i>
+					</div><span class="filtre_nom">Romantique</span>
+				</div>
+				<div class="petit_container">
+					<div class="rond_icone">
+						<i class="fas fa-dog"></i>
+					</div><span class="filtre_nom">Animaux autorisés</span>
+				</div>
 			</div>
-			
-	
-	</section>
-    <!-- HEBERGEMENT -->
+		</div>
+		<div class="bas_recherche_section">
+			<div class="bouton_info">
+				<i class="fas fa-info"></i>
+			</div>
+			<p class="info_texte">Plus de 500 logements sont disponibles dans cette ville</p>
+		</div>
+	</section><!-- HEBERGEMENT -->
 	<section class="hebergement_section" id="hebergement">
 		<div class="meme_ligne_h_et_p">
-		<div class="hebergement_wrapper">
-			<h2 class="hebergement_titre">Hébergements à Marseille</h2>
-			<div class="hebergement_boite_bloc">
-				<div class="hebergement_container">
-				<a class="hebergement_clic" href="#">
-					<img class="hebergement_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<div class="bloc_de_texte_bloc">
-					<h3 class="hebergement_petit_titre">Auberge la Cannebière</h3>
-					<p class="hebergement_mini_titre">Nuit à partir de <span class="prix prix_gras">25</span><span class="euro">€</span></p>
-					<div class="etoiles">
-						<i class="fas fa-star "></i>
-						  <i class="fas fa-star "></i>
-						  <i class="fas fa-star "></i>
-						  <i class="fas fa-star "></i>
-						  <i class="fas fa-star etoile_vide "></i>
-					</div>
-					</div>
-				</a>
-				</div>
-				<div class="hebergement_container">
-					<a class="hebergement_clic" href="#">
-						<img class="hebergement_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+			<div class="hebergement_wrapper">
+				<h2 class="hebergement_titre">Hébergements à Marseille</h2>
+				<div class="hebergement_boite_bloc">
+					<div class="hebergement_container">
+						<a class="hebergement_clic" href="#"><img alt="Image du vieux port" class="hebergement_photo_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
 						<div class="bloc_de_texte_bloc">
-						<h3 class="hebergement_petit_titre">Hôtel du port</h3>
-						<p class="hebergement_mini_titre">Nuit à partir de <span class="prix prix_gras">52</span><span class="euro">€</span></p>
-						<div class="etoiles">
-							<i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star etoile_vide "></i>
-						</div>
-						</div>
-					</a>
-					</div><div class="hebergement_container">
-						<a class="hebergement_clic" href="#">
-							<img class="hebergement_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-							<div class="bloc_de_texte_bloc">
+							<h3 class="hebergement_petit_titre">Auberge la Cannebière</h3>
+							<p class="hebergement_mini_titre">Nuit à partir de <span class="prix prix_gras">25</span><span class="euro">€</span></p>
+							<div class="etoiles">
+								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star etoile_vide"></i>
+							</div>
+						</div></a>
+					</div>
+					<div class="hebergement_container">
+						<a class="hebergement_clic" href="#"><img alt="Image du vieux port" class="hebergement_photo_img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+						<div class="bloc_de_texte_bloc">
+							<h3 class="hebergement_petit_titre">Hôtel du port</h3>
+							<p class="hebergement_mini_titre">Nuit à partir de <span class="prix prix_gras">52</span><span class="euro">€</span></p>
+							<div class="etoiles">
+								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star etoile_vide"></i>
+							</div>
+						</div></a>
+					</div>
+					<div class="hebergement_container">
+						<a class="hebergement_clic" href="#"><img alt="Image du vieux port" class="hebergement_photo_img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+						<div class="bloc_de_texte_bloc">
 							<h3 class="hebergement_petit_titre">Hôtel les mouettes</h3>
 							<p class="hebergement_mini_titre">Nuit à partir de <span class="prix">75</span><span class="euro">€</span></p>
 							<div class="etoiles">
-								<i class="fas fa-star"></i>
-								  <i class="fas fa-star"></i>
-								  <i class="fas fa-star"></i>
-								  <i class="fas fa-star"></i>
-								  <i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 							</div>
-							</div>
-						</a>
-						</div><div class="hebergement_container">
-							<a class="hebergement_clic" href="#">
-								<img class="hebergement_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-								<div class="bloc_de_texte_bloc">
-								<h3 class="hebergement_petit_titre">Hôtel de la mer</h3>
-								<p class="hebergement_mini_titre">Nuit à partir de <span class="prix">46</span><span class="euro">€</span></p>
-								<div class="etoiles">
-									<i class="fas fa-star"></i>
-									  <i class="fas fa-star"></i>
-									  <i class="fas fa-star"></i>
-									  <i class="fas fa-star etoile_vide"></i>
-									  <i class="fas fa-star etoile_vide"></i>
-								</div>
-								</div>
-							</a>
-							</div><div class="hebergement_container">
-								<a class="hebergement_clic" href="#">
-									<img class="hebergement_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-									<div class="bloc_de_texte_bloc">
-									<h3 class="hebergement_petit_titre">Auberge le panier</h3>
-									<p class="hebergement_mini_titre">Nuit à partir de <span class="prix prix_gras">23</span><span class="euro">€</span></p>
-									<div class="etoiles">
-										<i class="fas fa-star "></i>
-										  <i class="fas fa-star"></i>
-										  <i class="fas fa-star"></i>
-										  <i class="fas fa-star"></i>
-										  <i class="fas fa-star etoile_vide"></i>
-									</div>
-									</div>
-								</a>
-								</div><div class="hebergement_container">
-									<a class="hebergement_clic" href="#">
-										<img class="hebergement_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-										<div class="bloc_de_texte_bloc">
-										<h3 class="hebergement_petit_titre">Hôtel chez Amina</h3>
-										<p class="hebergement_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
-										<div class="etoiles">
-											<i class="fas fa-star"></i>
-											  <i class="fas fa-star"></i>
-											  <i class="fas fa-star"></i>
-											  <i class="fas fa-star"></i>
-											  <i class="fas fa-star"></i>
-										</div>
-										</div>
-									</a>
-									</div>
-				<h3 class="hebergement_bas">Afficher plus</h3>
-			</div>
-			
-			</div>	
-			<div class="populaire_section">
-			<div class="populaire_wrapper">
-			<div class="populaire_zone_haut">
-			<h2 class="populaire_titre">Les plus populaires</h2>
-			<i class="fas fa-chart-line"></i>
-			</div>
-			<div class="populaire_boite_bloc">
-				<div class="populaire_container">
-					<a class="populaire_clic" href="#">
-						<img class="populaire_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+						</div></a>
+					</div>
+					<div class="hebergement_container">
+						<a class="hebergement_clic" href="#"><img alt="Image du vieux port" class="hebergement_photo_img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
 						<div class="bloc_de_texte_bloc">
-						<h3 class="populaire_petit_titre">Hôtel le soleil du matin</h3>
-						<p class="populaire_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
-						<div class="etoiles">
-							<i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-						</div>
-						</div>
-					</a>
+							<h3 class="hebergement_petit_titre">Hôtel de la mer</h3>
+							<p class="hebergement_mini_titre">Nuit à partir de <span class="prix">46</span><span class="euro">€</span></p>
+							<div class="etoiles">
+								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star etoile_vide"></i> <i class="fas fa-star etoile_vide"></i>
+							</div>
+						</div></a>
 					</div>
-			<div class="populaire_container">
-				<a class="populaire_clic" href="#">
-					<img class="populaire_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<div class="bloc_de_texte_bloc">
-					<h3 class="populaire_petit_titre">Au coeur de l'eau Chambres d'hôtes</h3>
-					<p class="populaire_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
-					<div class="etoiles">
-						<i class="fas fa-star"></i>
-						  <i class="fas fa-star"></i>
-						  <i class="fas fa-star"></i>
-						  <i class="fas fa-star"></i>
-						  <i class="fas fa-star etoile_vide"></i>
+					<div class="hebergement_container">
+						<a class="hebergement_clic" href="#"><img alt="Image du vieux port" class="hebergement_photo_img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+						<div class="bloc_de_texte_bloc">
+							<h3 class="hebergement_petit_titre">Auberge le panier</h3>
+							<p class="hebergement_mini_titre">Nuit à partir de <span class="prix prix_gras">23</span><span class="euro">€</span></p>
+							<div class="etoiles">
+								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star etoile_vide"></i>
+							</div>
+						</div></a>
 					</div>
+					<div class="hebergement_container">
+						<a class="hebergement_clic" href="#"><img alt="Image du vieux port" class="hebergement_photo_img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+						<div class="bloc_de_texte_bloc">
+							<h3 class="hebergement_petit_titre">Hôtel chez Amina</h3>
+							<p class="hebergement_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
+							<div class="etoiles">
+								<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+							</div>
+						</div></a>
 					</div>
-				</a>
+					<h3 class="hebergement_bas">Afficher plus</h3>
 				</div>
-				<div class="populaire_container">
-					<a class="populaire_clic" href="#">
-						<img class="populaire_photo_img" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-						<div class="bloc_de_texte_bloc">
-						<h3 class="populaire_petit_titre">Hôtel Tout bleu et Blanc</h3>
-						<p class="populaire_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
-						<div class="etoiles">
-							<i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star"></i>
-							  <i class="fas fa-star etoile_vide"></i>
-						</div>
-						</div>
-					</a>
+			</div>
+			<div class="populaire_section">
+				<div class="populaire_wrapper">
+					<div class="populaire_zone_haut">
+						<h2 class="populaire_titre">Les plus populaires</h2><i class="fas fa-chart-line"></i>
 					</div>
-			</div>
+					<div class="populaire_boite_bloc">
+						<div class="populaire_container">
+							<a class="populaire_clic" href="#"><img alt="Image du vieux port" class="populaire_photo_img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+							<div class="bloc_de_texte_bloc">
+								<h3 class="populaire_petit_titre">Hôtel le soleil du matin</h3>
+								<p class="populaire_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
+								<div class="etoiles etoiles_populaire1">
+									<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+								</div>
+							</div></a>
+						</div>
+						<div class="populaire_container">
+							<a class="populaire_clic" href="#"><img alt="Image du vieux port" class="populaire_photo_img" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+							<div class="bloc_de_texte_bloc">
+								<h3 class="populaire_petit_titre">Au coeur de l'eau Chambres d'hôtes</h3>
+								<p class="populaire_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
+								<div class="etoiles etoiles_populaire2">
+									<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star etoile_vide3"></i>
+								</div>
+							</div></a>
+						</div>
+						<div class="populaire_container">
+							<a class="populaire_clic" href="#"><img alt="Image du vieux port" class="populaire_photo_img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+							<div class="bloc_de_texte_bloc">
+								<h3 class="populaire_petit_titre">Hôtel Tout bleu et Blanc</h3>
+								<p class="populaire_mini_titre">Nuit à partir de <span class="prix">96</span><span class="euro">€</span></p>
+								<div class="etoiles etoiles_populaire">
+									<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star etoile_vide"></i>
+								</div>
+							</div></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		</div>
-	</section>
-    <!--ACTIVITE-->
+	</section><!--ACTIVITE-->
 	<section class="activite_section" id="activite">
 		<div class="activite_wrapper">
 			<h2 class="activite_titre">Activités à Marseille</h2>
 		</div>
-			<div class="activite_boite_bloc">
-				<div class="activite_boite activite_boite1">
-				<a class="activite_clic" href="#">
-					<img class="activite_photo_img activite_photo_img_grand" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<h3 class="activite_petit_titre">Vieux Port</h3>
-				</a>
-				</div>
-				<div class="activite_boite activite_boite2">
-				<a class="activite_clic" href="#">
-					<img class="activite_photo_img activite_photo_img_petit" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<h3 class="activite_petit_titre">Vieux Port</h3>
-				</a>
-				</div>
-				<div class="activite_boite activite_boite3">
-				<a class="activite_clic" href="#">
-					<img class="activite_photo_img activite_photo_img_petit" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<h3 class="activite_petit_titre">Vieux Port</h3>
-				</a>
-				</div>
-				<div class="activite_boite activite_boite4">
-					<a class="activite_clic" href="#">
-					<img class="activite_photo_img activite_photo_img_grand" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<h3 class="activite_petit_titre">Vieux Port</h3>
-					</a>
-				</div>
-				<div class="activite_boite activite_boite5">
-					<a class="activite_clic" href="#">
-					<img class="activite_photo_img activite_photo_img_petit" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<h3 class="activite_petit_titre">Vieux Port</h3>
-					</a>
-				</div>
-				<div class="activite_boite activite_boite6">
-					<a class="activite_clic" href="#">
-					<img class="activite_photo_img activite_photo_img_petit" alt="Image du vieux port"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-					<h3 class="activite_petit_titre">Vieux Port</h3>
-					</a>
-				</div>
-
-				
+		<div class="activite_boite_bloc">
+			<div class="activite_boite activite_boite1">
+				<a class="activite_clic" href="#"><img alt="Image du vieux port" class="activite_photo_img activite_photo_img_grand" src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+				<h3 class="activite_petit_titre">Vieux Port</h3></a>
 			</div>
-			
-		
-	</section>
-    <!-- Footer -->
+			<div class="activite_boite activite_boite2">
+				<a class="activite_clic" href="#"><img alt="Fort de pomègues" class="activite_photo_img activite_photo_img_moyen" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+				<h3 class="activite_petit_titre">Fort de pomègues</h3></a>
+			</div>
+			<div class="activite_boite activite_boite3">
+				<a class="activite_clic" href="#"><img alt="île du Frioul" class="activite_photo_img activite_photo_img_petit" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+				<h3 class="activite_petit_titre">île du Frioul</h3></a>
+			</div>
+			<div class="activite_boite activite_boite4">
+				<a class="activite_clic" href="#"><img alt="Parc National des Calanques" class="activite_photo_img activite_photo_img_grand" src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+				<h3 class="activite_petit_titre">Parc National des Calanques</h3></a>
+			</div>
+			<div class="activite_boite activite_boite5">
+				<a class="activite_clic" href="#"><img alt="Notre-Dame-de-la-Garde" class="activite_photo_img activite_photo_img_moyen2" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+				<h3 class="activite_petit_titre">Notre-Dame-de-la-Garde</h3></a>
+			</div>
+			<div class="activite_boite activite_boite6">
+				<a class="activite_clic" href="#"><img alt="Parc Longchamp" class="activite_photo_img activite_photo_img_moyen3" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+				<h3 class="activite_petit_titre">Parc Longchamp</h3></a>
+			</div>
+		</div>
+	</section><!-- Footer -->
 	<footer class="footer_section">
 		<div class="footer_wrapper">
 			<div class="footer_partie">
