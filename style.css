@@ -155,13 +155,15 @@ a {
 	font-size: 20px;
 	border-color: #F2F2F2;
 	border-style: solid;
+	color: #000000;
+	padding-left: 16px;
 }
 ::placeholder {
-	color: black;
+	color: #000000;
 	font-size: 16px;
 	font-weight: 700;
 	font-family: 'Raleway';
-	padding: 16px;
+	opacity: 1;
 }
 .rechercher {
 	cursor: pointer;
