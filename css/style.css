@@ -37,7 +37,7 @@ a {
 }
 .fas {
 	font-size: 20px;
-	color: black;
+	color: #000000;
 }
 .fas:hover {
 	cursor: pointer;
