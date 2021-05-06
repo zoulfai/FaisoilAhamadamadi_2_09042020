@@ -139,7 +139,20 @@
 
 /*media hebergement et populaire */
 
-@media (max-width: 1350px) {
+@media (max-width: 1476px) {
+	.meme_ligne_h_et_p {
+		display: flex;
+		flex-direction: column-reverse;
+		border-radius: 0%;
+	}
+	.hebergement_wrapper {
+		display: flex;
+		flex-direction: column;
+		margin-top: 32px;
+		background-color: white;
+	}
+}
+@media (max-width: 1360px) {
 	.meme_ligne_h_et_p {
 		display: flex;
 		flex-direction: column-reverse;
@@ -206,6 +219,7 @@
 
 /*media populaire*/
 @media (max-width: 768px) {
+	
 	.populaire_section {
 		background-color: #F2F2F2;
 		padding: 0%;
@@ -234,12 +248,30 @@
 		position: relative;
 		top: 20px;
 	}
+	.populaire_container{
+		
+		max-width: 486px;
+	}
+	.populaire_boite_bloc{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.populaire_zone_haut{
+		display: flex;
+    	align-items: center;
+    	justify-content: space-around;
+		
+	}
 }	/*media section activite*/
 
 	
 @media (max-width: 1350px) {
 	.activite_wrapper {
 		padding-top: 0%;
+	}
+	.activite_titre{
+		text-align: center;
 	}
 	.activite_boite_bloc {
 		display: flex;
@@ -296,9 +328,24 @@
 	}
 	
 }
+
+
+	@media (max-width: 1000px) {
+	.activite_wrapper {
+		padding-top: 0%;
+		}
+	.activite_boite{
+		max-width: 486px ;
+		}
+	}
+
+
 	@media (max-width: 768px) {
 		.activite_wrapper {
 			padding-top: 0%;
+		}
+		.activite_boite{
+			max-width: 486px ;
 		}
 		.activite_boite_bloc {
 			display: flex;
@@ -315,31 +362,31 @@
 		}
 		.activite_boite1 {
 			height: 192px;
-			max-width:711px;
+			max-width:486px;
 		}
 		.activite_boite2 {
 			height: 192px;
-			max-width:711px;
+			max-width:486px;
 		}
 		.activite_boite3 {
 			height: 192px;
 			position: static;
 			bottom: 3px;
-			max-width:711px;
+			max-width:486px;
 		}
 		.activite_boite4 {
 			height: 192px;
-			max-width:711px;
+			max-width:486px;
 		}
 		.activite_boite5 {
 			height: 192px;
-			max-width:711px;
+			max-width:486px;
 		}
 		.activite_boite6 {
 			height: 192px;
 			position: static;
 			bottom: 71px;
-			max-width:711px;
+			max-width:486px;
 		}
 		.activite_photo_img_petit {
 			height: 76%;
