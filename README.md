@@ -1,4 +1,3 @@
-FaisoilAhamadamadi_2_09042020
 Transformez une maquette en site web
 
 Scénario
